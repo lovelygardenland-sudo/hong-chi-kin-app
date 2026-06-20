@@ -1,0 +1,28 @@
+{
+  "expo": {
+    "name": "康姿健",
+    "slug": "hong-chi-kin",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "scheme": "hongchikin",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "splash": {
+      "backgroundColor": "#C96B73"
+    },
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.hongchikin.app"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#C96B73"
+      },
+      "package": "com.hongchikin.app"
+    },
+    "plugins": ["expo-router"],
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}

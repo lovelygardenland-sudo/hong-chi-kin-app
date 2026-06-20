@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "installCommand": "cd customer-web && npm install",
+  "buildCommand": "cd customer-web && npm run build",
+  "outputDirectory": "customer-web/dist",
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
+}
