@@ -5,6 +5,7 @@ import { SHOP } from '@shared/data/shop';
 import { CATEGORY_LABELS, TREATMENTS, type TreatmentCategory } from '@shared/data/treatments';
 import { createCustomerBooking } from './bookingService';
 import { firebaseEnabled } from './firebase';
+import logoUrl from './logo.jpeg';
 import './styles.css';
 
 const categories: TreatmentCategory[] = ['tegoder', 'laser', 'plasma', 'signature', 'addon'];
@@ -32,6 +33,14 @@ function isRestDate(date: string) {
 
 function whatsappUrl(message: string) {
   return `https://wa.me/${SHOP.whatsapp}?text=${encodeURIComponent(message)}`;
+}
+
+function BrandLogo({ compact = false }: { compact?: boolean }) {
+  return (
+    <div className={`brand-logo ${compact ? 'compact' : ''}`}>
+      <img src={logoUrl} alt="康姿健 HONG CHI KIN" className="brand-logo-img" />
+    </div>
+  );
 }
 
 function App() {
@@ -77,7 +86,7 @@ function App() {
     <div>
       <header className="hero">
         <nav>
-          <strong>{SHOP.name}</strong>
+          <BrandLogo compact />
           <a href={whatsappUrl('你好，我想查詢康姿健療程及預約')} target="_blank">
             WhatsApp 查詢
           </a>

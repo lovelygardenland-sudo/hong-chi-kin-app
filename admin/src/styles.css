@@ -38,6 +38,40 @@ body {
   flex-shrink: 0;
 }
 
+.admin-brand {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 32px;
+}
+
+.admin-brand-logo {
+  width: 126px;
+  height: 104px;
+  object-fit: contain;
+  margin-bottom: 12px;
+  mix-blend-mode: multiply;
+  filter: contrast(1.08) saturate(1.08);
+}
+
+.admin-brand strong {
+  font-size: 24px;
+  line-height: 1.1;
+}
+
+.admin-brand small {
+  margin-top: 4px;
+  letter-spacing: 3px;
+  font-size: 12px;
+  opacity: 0.86;
+}
+
+.admin-brand > span {
+  margin-top: 6px;
+  font-size: 13px;
+  opacity: 0.78;
+}
+
 .sidebar h1 {
   font-size: 20px;
   margin-bottom: 4px;

@@ -6,7 +6,9 @@
     </linearGradient>
   </defs>
   <rect width="512" height="512" rx="112" fill="url(#bg)"/>
-  <circle cx="256" cy="256" r="158" fill="none" stroke="#FFF4F2" stroke-width="10"/>
-  <text x="256" y="236" text-anchor="middle" fill="#ffffff" font-size="82" font-family="Arial, sans-serif" font-weight="700">HCK</text>
-  <text x="256" y="305" text-anchor="middle" fill="#FFF4F2" font-size="28" font-family="Arial, sans-serif" letter-spacing="4">BEAUTY</text>
+  <circle cx="256" cy="238" r="142" fill="none" stroke="#FFF4F2" stroke-width="10"/>
+  <text x="256" y="190" text-anchor="middle" fill="#ffffff" font-size="92" font-family="serif" font-weight="800">?</text>
+  <text x="196" y="292" text-anchor="middle" fill="#ffffff" font-size="74" font-family="serif" font-weight="800">?</text>
+  <text x="318" y="292" text-anchor="middle" fill="#FFE3EF" font-size="78" font-family="serif" font-weight="800">?</text>
+  <text x="256" y="410" text-anchor="middle" fill="#ffffff" font-size="44" font-family="Arial, sans-serif" font-weight="700" letter-spacing="10">HCK</text>
 </svg>

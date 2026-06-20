@@ -28,6 +28,7 @@ import {
   addTransaction,
   resetDemoData,
 } from './storage';
+import logoUrl from './logo.jpeg';
 
 type Tab = 'dashboard' | 'preview' | 'bookings' | 'members' | 'promotions' | 'rest';
 
@@ -59,8 +60,7 @@ export default function App() {
   return (
     <div className="layout">
       <aside className="sidebar">
-        <h1>{SHOP.name}</h1>
-        <p className="sub">管理後台</p>
+        <AdminBrandLogo />
         {navItems.map((item) => (
           <button
             key={item.id}
@@ -133,6 +133,17 @@ export default function App() {
           </button>
         </div>
       </main>
+    </div>
+  );
+}
+
+function AdminBrandLogo() {
+  return (
+    <div className="admin-brand">
+      <img src={logoUrl} alt="康姿健 HONG CHI KIN" className="admin-brand-logo" />
+      <strong>{SHOP.name}</strong>
+      <small>{SHOP.nameEn}</small>
+      <span>管理後台</span>
     </div>
   );
 }

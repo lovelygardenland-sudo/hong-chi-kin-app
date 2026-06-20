@@ -14,6 +14,7 @@ import { RestNoticeBanner } from '../../components/RestNoticeBanner';
 import { TreatmentCard } from '../../components/TreatmentCard';
 import { Card } from '../../components/Card';
 import { WhatsAppQueryButton } from '../../components/WhatsAppQueryButton';
+import { BrandLogo } from '../../components/BrandLogo';
 import {
   getMember,
   getActiveRestNotice,
@@ -74,8 +75,7 @@ export default function HomeScreen() {
       }
     >
       <View style={styles.hero}>
-        <Text style={styles.heroEn}>{SHOP.nameEn}</Text>
-        <Text style={styles.heroZh}>{SHOP.name}</Text>
+        <BrandLogo />
         <Text style={styles.tagline}>{SHOP.tagline}</Text>
       </View>
 
@@ -155,6 +155,7 @@ const styles = StyleSheet.create({
     borderRadius: theme.radius.lg,
     padding: theme.spacing.lg,
     marginBottom: theme.spacing.md,
+    alignItems: 'center',
   },
   heroEn: {
     color: theme.colors.pink,
